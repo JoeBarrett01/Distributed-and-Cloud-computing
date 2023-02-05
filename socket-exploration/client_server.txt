@@ -1,0 +1,16 @@
+Close the server and attempt connecting using the client. What happens and why?
+    - The client is unable to connect because there is no server. 
+
+What is distribution transparency? Using sockets for communication does not offer
+distribution transparency. Justify this statement (hint: there are a number of reasons
+including naming in the context of location transparency. Also consider the previous
+question).
+    - Distribution transparency is the property of distributed databases by 
+      the virtue of which the internal details of the distribution are hidden from the users.
+
+    - The socket cannot provide distribution transparency since we would be able to find
+      the location of the socket from the stub given requesting data. 
+
+Think about how you would design a middleware for communication built using sockets
+which offers greater distribution transparency than sockets.
+    - I would pass my connection through a TOR. 
