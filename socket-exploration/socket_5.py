@@ -11,6 +11,8 @@ port = 12345
 # Next bind to the port; we have not typed any ip in the ip field. Instead we have input an
 # empty string which makes the server listen to requests coming from other computers
 # on the network
+
+# remove localhost to accept other connections
 s.bind(('localhost', port))
 
 print("socket binded to %s" %(port))
